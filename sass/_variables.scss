@@ -1,0 +1,65 @@
+/******************/
+/*      FONTS     */
+/******************/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800');
+$font-header: 'Montserrat', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+$font-text: 'Roboto Slab', serif;
+
+@font-face {
+    font-family: 'DroidSerif';
+    src: url("../fonts/DroidSerif-Italic.ttf") format("truetype"),
+}
+
+$font-text-italic: 'DroidSerif', serif;
+
+@font-face {
+    font-family: 'Wisdom';
+    src: url("../fonts/Wisdom.otf") format("opentype"),
+}
+
+$font-logo: 'Wisdom';
+
+
+/******************/
+/*     COLORS     */
+/******************/
+$white: #fff;
+$yellow: #fed136;
+
+$text-color: #222;
+$text-light-color: #777;
+$placeholder-color: #bbb;
+
+$bg-darker-color: #f7f7f7;
+
+$line-color: #f1f1f1;
+
+
+/******************/
+/*   FONT SIZES   */
+/******************/
+$logo-size: 26px;
+$menu-size: 14px;
+
+$header-big-size: 40px;
+$header-size: 18px;
+
+$font-size-base: 14px;
+$font-size-bigger: $font-size-base + 2px;
+
+
+/******************/
+/*     OTHERS     */
+/******************/
+$slogan-size: 75px;
+$services-icon-size: 45px;
+$social-icon-size: 20px;
+
+$transition-time: .3s;
+
+$gap-section: 120px;
+
+$footer-height: 90px;
+$footer-height-xs: $footer-height - 30px;

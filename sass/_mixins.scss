@@ -1,0 +1,113 @@
+@mixin container-padding($top: 0, $bottom: 0) {
+    $gap: 0;
+
+    @media (max-width: map-get($grid-breakpoints, md) - 1) {
+        $gap: $gap-section / 2;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        $gap: $gap-section;
+    }
+
+    @if ($top=='0'and $bottom=='0') {
+        padding: $gap 0;
+    }
+
+    @else {
+        padding-top: $gap - $top;
+        padding-bottom: $gap - $bottom;
+    }
+}
+
+@mixin var-gap-section($size: $gap-section) {
+    @media (max-width: map-get($grid-breakpoints, md) - 1) {
+        $small-gap-section: $size / 2;
+        padding: $small-gap-section 0;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        padding: $size 0;
+    }
+}
+
+@mixin flexbox($main-axis: center, $cross-axis: center, $axis: row) {
+    display: flex;
+    flex-flow: $axis wrap;
+    justify-content: $main-axis;
+    align-items: $cross-axis;
+}
+
+@mixin icon-circle($size, $color) {
+    @if ($color==$white) {
+        $color: $text-color;
+    }
+
+    width: 2 * $size;
+    height: 2 * $size;
+    border: 3px solid $color;
+    border-radius: 50%;
+}
+
+%base-text-style {
+    font-family: $font-text;
+    font-size: $font-size-base;
+    color: $text-light-color;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+%base-text-italic-style {
+    @extend %base-text-style;
+    font-family: $font-text-italic;
+}
+
+%header-style {
+    font-family: $font-header;
+    font-size: $header-size;
+    color: $text-color;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+%header-big-style {
+    @extend %header-style;
+
+    @media (max-width: map-get($grid-breakpoints, sm) - 1) {
+        font-size: $header-big-size - 10px;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, sm)) {
+        font-size: $header-big-size;
+    }
+
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 0px -1px 2px $text-light-color;
+    letter-spacing: 2px;
+}
+
+%border-none-radius {
+    border: none;
+    border-radius: 5px;
+}
+
+%input-text-style {
+    @extend %header-style;
+    font-size: 14px;
+    text-align: left;
+    color: $text-color
+}
+
+%input-focus-style {
+    border: 5px solid $yellow;
+    padding: 10px;
+}
+
+%placeholder-text-style {
+    @extend %input-text-style;
+    text-transform: uppercase;
+    color: $placeholder-color;
+}

@@ -1,0 +1,72 @@
+.contact {
+	background: url('../../images/map.jpg') no-repeat center 0/cover;
+	overflow: hidden;
+
+	&__overlay {
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, .5);
+	}
+
+	.title-white {
+		color: $white;
+	}
+
+	&__form {
+		@include flexbox(space-between, center, column);
+
+		.form__field {
+			@extend %border-none-radius;
+			@extend %input-text-style;
+			width: 90%;
+			height: 50px;
+			padding: 15px;
+			background-color: $white;
+			border: none;
+			border-radius: 5px;
+
+			&::placeholder {
+				@extend %placeholder-text-style;
+			}
+
+			&:focus {
+				@extend %input-focus-style;
+			}
+		}
+	}
+
+	&__message {
+		.message-area {
+			display: block;
+			margin: 0 auto;
+			@extend %border-none-radius;
+			@extend %input-text-style;
+			height: 220px;
+			width: 90%;
+			padding: 15px;
+			overflow-y: auto;
+			resize: none;
+
+			&::placeholder {
+				@extend %placeholder-text-style;
+			}
+
+			&:focus {
+				@extend %input-focus-style;
+			}
+		}
+	}
+
+	&__submit-btn {
+		display: block;
+		margin: 30px auto 0;
+	}
+}
+
+@media (max-width: map-get($grid-breakpoints, md) - 1) {
+	.contact__form {
+		.form__field {
+			margin-bottom: 15px;
+		}
+	}
+}

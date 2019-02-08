@@ -1,0 +1,7 @@
+.brands {
+
+    &__cell {
+        @include flexbox;
+        height: 60px;
+    }
+}

@@ -1,0 +1,47 @@
+.services {
+    .card {
+        @include flexbox(center, center, column);
+        padding: 0 3%;
+
+        &__icon {
+            @include flexbox;
+            color: $yellow;
+            font-size: $services-icon-size;
+            @include icon-circle($services-icon-size, $yellow);
+            transition: $transition-time;
+        }
+
+        &__link {
+            @include flexbox(center, center, column);
+
+            &:hover {
+                .card__icon {
+                    color: $white;
+                    background-color: $yellow;
+                }
+
+                .card__title {
+                    color: $yellow;
+                }
+            }
+        }
+
+        &__title {
+            @extend %header-style;
+            transition: $transition-time;
+            margin: 20px 0;
+        }
+
+        &__description {
+            @extend %base-text-style;
+            text-align: center;
+            line-height: 1.6;
+        }
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, md) - 1) {
+    .card:not(:first-child) {
+        margin-top: 60px;
+    }
+}

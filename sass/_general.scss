@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $white;
+	margin: 0 auto;
+}
+
+.container-fluid {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+*:focus,
+button:focus {
+	outline: 0;
+}
+
+figure {
+	margin: 0;
+}

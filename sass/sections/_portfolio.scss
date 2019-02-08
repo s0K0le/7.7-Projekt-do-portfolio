@@ -1,0 +1,61 @@
+.portfolio {
+    background-color: $bg-darker-color;
+
+    .minisite {
+        @include flexbox(center, center, column);
+        background-color: $white;
+
+        width: 80%;
+        margin: 0 auto;
+        transition: transform $transition-time;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &__link {
+            width: 100%;
+            font-size: 0;
+        }
+
+        &__image {
+            width: 100%;
+            object-fit: cover;
+            opacity: .8;
+            transition: $transition-time;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        &__title {
+            @extend %header-style;
+            margin: 20px 0;
+        }
+
+        &__description {
+            @extend %base-text-italic-style;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+@media (min-width: map-get($grid-breakpoints, lg)) {
+    .gap-bottom:not(:nth-child(n+4)) {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: map-get($grid-breakpoints, md)) and (max-width: map-get($grid-breakpoints, lg) - 1) {
+    .gap-bottom:not(:nth-child(n+5)) {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, md) - 1) {
+    .gap-bottom:not(:nth-child(n+6)) {
+        margin-bottom: 50px;
+    }
+}

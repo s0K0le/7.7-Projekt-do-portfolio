@@ -1,0 +1,17 @@
+/* main SASS file, where other Sass files are imported */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+@import "normalize";
+@import "variables";
+@import "general";
+@import "grid";
+@import "mixins";
+@import "components";
+
+@import "sections/jumbotron";
+@import "sections/services";
+@import "sections/portfolio";
+@import "sections/about";
+@import "sections/team";
+@import "sections/brands";
+@import "sections/contact";
+@import "sections/footer";

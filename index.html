@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Mariusz Pietrzak" />
+    <title>7 - Projekt indywidualny</title>
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- JUMBOTRON -->
+    <header class="container-fluid jumbotron">
+        <div class="jumbotron__overlay">
+            <div class="container jumbotron__gap">
+                <section class="nav">
+                    <a href="#" class="nav__logo">Golden</a>
+
+                    <div class="menu-hamburger">
+                        <div class="menu-hamburger__line1"></div>
+                        <div class="menu-hamburger__line2"></div>
+                        <div class="menu-hamburger__line3"></div>
+                    </div>
+
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li>
+                                <a href="#" class="menu__link">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu__link">Services</a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu__link">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu__link">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="menu__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <ul class="nav-mobile">
+                    <li class="nav-mobile__item"><a class="menu__link nav-mobile__link" href="#">Home</a></li>
+                    <li class="nav-mobile__item"><a class="menu__link nav-mobile__link" href="#">Services</a></li>
+                    <li class="nav-mobile__item"><a class="menu__link nav-mobile__link" href="#">Portfolio</a></li>
+                    <li class="nav-mobile__item"><a class="menu__link nav-mobile__link" href="#">About</a></li>
+                    <li class="nav-mobile__item"><a class="menu__link nav-mobile__link" href="#">Contact</a></li>
+                </ul>
+
+                <div class="title">
+                    <p class="title__welcome">Welcome To Our Studio!</p>
+                    <p class="title__slogan">It's nice to meet you</p>
+                    <button class="btn-big">Tell me more</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section class="container gap-section services">
+        <header class="section-header">
+            <h1 class="section-header__title">Services</h1>
+            <p class="section-header__text">Proin iaculis purus consequat sem cure.</p>
+        </header>
+        <div class="row">
+            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <a href="#" class="card__link">
+                    <i class="card__icon fas fa-shopping-basket"></i>
+                    <h2 class="card__title">E-Commerce</h2>
+                </a>
+                <p class="card__description">Proin iaculis purus consequat sem cure digni ssim.
+                    Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+            </div>
+            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <a href="#" class="card__link">
+                    <i class="card__icon fas fa-laptop"></i>
+                    <h2 class="card__title">Responsive Web</h2>
+                </a>
+                <p class="card__description">Proin iaculis purus consequat sem cure digni ssim.
+                    Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+            </div>
+            <div class="card col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <a href="#" class="card__link">
+                    <i class="card__icon fas fa-lock"></i>
+                    <h2 class="card__title">Web Security</h2>
+                </a>
+                <p class="card__description">Proin iaculis purus consequat sem cure digni ssim.
+                    Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="container-fluid portfolio">
+        <div class="container gap-section">
+            <header class="section-header">
+                <h1 class="section-header__title">Our portfolio</h1>
+                <p class="section-header__text">Proin iaculis purus consequat sem cure.</p>
+            </header>
+            <div class="row">
+                <div class="gap-bottom col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <figure class="minisite">
+                        <a class="minisite__link" href="#"><img class="minisite__image" src="./images/portfolio-1.jpg"
+                                alt="Ebony & Ivory"></a>
+                        <figcaption class="minisite__caption">
+                            <h2 class="minisite__title">Ebony & Ivory</h2>
+                            <p class="minisite__description">Branding</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="gap-bottom col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <figure class="minisite">
+                        <a class="minisite__link" href="#"><img class="minisite__image" src="./images/portfolio-2.jpg"
+                                alt="Smart Stationary"></a>
+                        <figcaption class="minisite__caption">
+                            <h2 class="minisite__title">Smart Stationary</h2>
+                            <p class="minisite__description">Print Design</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="gap-bottom col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <figure class="minisite">
+                        <a class="minisite__link" href="#"><img class="minisite__image" src="./images/portfolio-3.jpg"
+                                alt="Clever Poster"></a>
+                        <figcaption class="minisite__caption">
+                            <h2 class="minisite__title">Clever Poster</h2>
+                            <p class="minisite__description">Print Design</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="gap-bottom col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <figure class="minisite">
+                        <a class="minisite__link" href="#"><img class="minisite__image" src="./images/portfolio-4.jpg"
+                                alt="Vinyl Record"></a>
+                        <figcaption class="minisite__caption">
+                            <h2 class="minisite__title">Vinyl Record</h2>
+                            <p class="minisite__description">Product Mock-Up</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="gap-bottom col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <figure class="minisite">
+                        <a class="minisite__link" href="#"><img class="minisite__image" src="./images/portfolio-5.jpg"
+                                alt="Treehouse Template"></a>
+                        <figcaption class="minisite__caption">
+                            <h2 class="minisite__title">Treehouse Template</h2>
+                            <p class="minisite__description">Web Design</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="gap-bottom col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <figure class="minisite">
+                        <a class="minisite__link" href="#"><img class="minisite__image" src="./images/portfolio-6.jpg"
+                                alt="Burned Logo"></a>
+                        <figcaption class="minisite__caption">
+                            <h2 class="minisite__title">Burned Logo</h2>
+                            <p class="minisite__description">Branding</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section class="container gap-section about">
+        <header class="section-header">
+            <h1 class="section-header__title">About Us</h1>
+            <p class="section-header__text">Proin iaculis purus consequat sem cure.</p>
+        </header>
+        <div class="row">
+            <div class="event event-left col-xl-5 col-lg-5 col-md-8 col-sm-8 col-xs-12">
+                <h2 class="event__date">July 2010</h2>
+                <h3 class="event__title">Our Humble Beginnings</h3>
+                <p class="event__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
+                    suscipit aenean
+                    rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec
+                    porttitora entum
+                    suscipit.</p>
+            </div>
+            <div class="event-center col-xl-2 col-lg-2 col-md-4 col-sm-4">
+                <img class="event__image" src="./images/about_us-1.png" alt="Desk">
+            </div>
+            <div class="col-xl-5 col-lg-5"></div>
+        </div>
+        <div class="row">
+            <div class="col-xl-5 col-lg-5"></div>
+            <div class="event-center col-xl-2 col-lg-2 col-md-4 col-sm-4">
+                <img class="event__image" src="./images/about_us-2.png" alt="Shore">
+            </div>
+            <div class="event event-right col-xl-5 col-lg-5 col-md-8 col-sm-8 col-xs-12">
+                <h2 class="event__date">January 2011</h2>
+                <h3 class="event__title">Facing Startup Battles</h3>
+                <p class="event__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
+                    suscipit aenean
+                    rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec
+                    porttitora entum
+                    suscipit.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="event event-left col-xl-5 col-lg-5 col-md-8 col-sm-8 col-xs-12">
+                <h2 class="event__date">December 2012</h2>
+                <h3 class="event__title">Enter The Dark Days</h3>
+                <p class="event__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
+                    suscipit aenean
+                    rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec
+                    porttitora entum
+                    suscipit.</p>
+            </div>
+            <div class="event-center col-xl-2 col-lg-2 col-md-4 col-sm-4">
+                <img class="event__image" src="./images/about_us-3.png" alt="Concert">
+            </div>
+            <div class="col-xl-5 col-lg-5"></div>
+        </div>
+        <div class="row">
+            <div class="col-xl-5 col-lg-5"></div>
+            <div class="event-center col-xl-2 col-lg-2 col-md-4 col-sm-4">
+                <img class="event__image" src="./images/about_us-4.png" alt="Shore">
+            </div>
+            <div class="event event-right col-xl-5 col-lg-5 col-md-8 col-sm-8 col-xs-12">
+                <h2 class="event__date">February 2014</h2>
+                <h3 class="event__title">Our Triumph</h3>
+                <p class="event__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum
+                    suscipit aenean
+                    rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec
+                    porttitora entum
+                    suscipit.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-5 col-lg-5"></div>
+            <div class="event-last col-xl-2 col-lg-2 col-md-4 col-sm-4">
+                <div class="event-last__circle">
+                    <p class="event-last__circle-text">Our<br>story<br>continues<br>...</p>
+                </div>
+            </div>
+            <div class="event-last-xs col-xs-12">
+                <h2 class="event-last-xs__text">Our story continues...</h2>
+            </div>
+            <div class="col-xl-5 col-lg-5"></div>
+        </div>
+    </section>
+
+    <!-- OUR AMAZING TEAM -->
+    <section class="container-fluid team">
+        <div class="container gap-section">
+            <header class="section-header">
+                <h1 class="section-header__title">Our amazing team</h1>
+                <p class="section-header__text">Proin iaculis purus consequat sem cure.</p>
+            </header>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="person">
+                        <a href="#" class="person-link">
+                            <img class="person-link__image" src="./images/person-1.png" alt="Kimberly Thompson">
+                            <h2 class="person-link__name">Kimberly Thompson</h2>
+                            <p class="person-link__jobposition">Marketer</p>
+                        </a>
+                        <div class="person-social">
+                            <a href="#" class="person-social__link"><i class="person-social__icon fab fa-twitter"></i></a>
+                            <a href="#" class="person-social__link"><i class="person-social__icon fab fa-facebook-f"></i></a>
+                            <a href="#" class="person-social__link"><i class="person-social__icon fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="person">
+                        <a href="#" class="person-link">
+                            <img class="person-link__image" src="./images/person-2.png" alt="Rico Massimo">
+                            <h2 class="person-link__name">Rico Massimo</h2>
+                            <p class="person-link__jobposition">Coder</p>
+                        </a>
+                        <div class="person-social">
+                            <a href="#" class="person-social__link"><i class="person-social__icon fab fa-twitter"></i></a>
+                            <a href="#" class="person-social__link"><i class="person-social__icon fab fa-facebook-f"></i></a>
+                            <a href="#" class="person-social__link"><i class="person-social__icon fab fa-google-plus-g"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="person">
+                        <a href="#" class="person-link">
+                            <img class="person-link__image" src="./images/person-3.png" alt="Uku Mason">
+                            <h2 class="person-link__name">Uku Mason</h2>
+                            <p class="person-link__jobposition">Graphic Designer</p>
+                        </a>
+                        <div class="person-social">
+                            <a href="#" class="person-social__link"><i class="person-social__icon fab fa-facebook-f"></i></a>
+                            <a href="#" class="person-social__link"><i class="person-social__icon fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="team__description">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                suscipit aenean
+                rhoncus posuere odio in tincidunt proin iaculis.</p>
+        </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="container brands gap-section-smaller">
+        <div class="row">
+            <div class="brands__cell col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <img src="./images/brand-envato.png" alt="Envato">
+            </div>
+            <div class="brands__cell col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <img src="./images/brand-word_press.png" alt="WordPress">
+            </div>
+            <div class="brands__cell col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <img src="./images/brand-tuts.png" alt="Tuts">
+            </div>
+            <div class="brands__cell col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <img src="./images/brand-microlancer.png" alt="Microlancer">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT US -->
+    <section class="container-fluid contact">
+        <div class="contact__overlay gap-section">
+            <div class="container">
+                <header class="section-header">
+                    <h1 class="section-header__title title-white">Contact us</h1>
+                    <p class="section-header__text">Proin iaculis purus consequat sem cure.</p>
+                </header>
+                <div class="row">
+                    <form class="contact__form col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <input class="form__field" type="text" name="name" placeholder="Your name *">
+                        <input class="form__field" type="text" name="email" placeholder="Your e-mail *">
+                        <input class="form__field" type="text" name="subject" placeholder="Subject">
+                    </form>
+                    <form class="contact__message col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <textarea class="message-area" name="message" placeholder="Your message *"></textarea>
+                    </form>
+                </div>
+                <input type="submit" class="btn-big contact__submit-btn" value="Send Message">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="container footer">
+        <div class="row">
+            <div class="footer__left-block col-xl-4 col-lg-4 col-md-6 col-sm-4 col-xs-12">
+                <p class="footer__copyright">© Copyright 2014 FreebiesXpress.com</p>
+            </div>
+            <div class="footer__center-block col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                <div class="footer-social">
+                    <a href="#" class="footer-social__link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-social__link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social__link"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="footer-social__link"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4">
+            </div>
+        </div>
+    </footer>
+
+    <button class="btn-toTop" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

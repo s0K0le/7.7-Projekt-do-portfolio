@@ -1,0 +1,89 @@
+.team {
+    background-color: $bg-darker-color;
+
+    .person {
+        @include flexbox(center, center, column);
+        padding: 0 10% 30px;
+
+        .person-link {
+            @include flexbox(center, center, column);
+            width: 100%;
+            font-size: 0;
+
+            &:hover {
+                .person-link__image {
+                    opacity: 1;
+                    transform: scale(1.05);
+                }
+
+                .person-link__name {
+                    color: $yellow;
+                }
+            }
+
+            &__image {
+                width: 80%;
+                object-fit: cover;
+                opacity: .8;
+                transition: $transition-time;
+            }
+
+            &__name {
+                @extend %header-style;
+                transition: $transition-time;
+                margin: 20px 0 10px;
+            }
+
+            &__jobposition {
+                @extend %base-text-style;
+                margin-bottom: 20px;
+            }
+        }
+
+        .person-social {
+            @include flexbox;
+
+            &__link {
+                @include flexbox;
+                color: $text-color;
+                font-size: $social-icon-size;
+                @include icon-circle($social-icon-size, $text-color);
+                transition: $transition-time;
+
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+
+                &:hover {
+                    color: $yellow;
+                    border-color: $yellow;
+                }
+            }
+        }
+    }
+
+    &__description {
+        @include flexbox;
+        padding: 50px 150px 0;
+        @extend %base-text-style;
+        font-size: $header-size;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, md) - 1) {
+    .team .person .person-link__image {
+        width: 50%;
+        opacity: 1;
+    }
+
+    .team__description {
+        padding: 30px 50px 0;
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, sm) - 1) {
+    .team .person .person-link__image {
+        width: 40%;
+    }
+}

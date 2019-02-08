@@ -1,0 +1,55 @@
+.footer {
+    &__left-block {
+        @include flexbox(flex-start);
+        height: $footer-height;
+    }
+
+    &__center-block {
+        @include flexbox;
+        height: $footer-height;
+    }
+
+    &__copyright {
+        @extend %header-style;
+        font-size: 14px;
+        color: $text-light-color;
+        text-align: left;
+    }
+
+    .footer-social {
+        @include flexbox;
+        height: 100%;
+
+        &__link {
+            @include flexbox;
+            color: $white;
+            font-size: $social-icon-size;
+            @include icon-circle($social-icon-size, $white);
+            transition: $transition-time;
+            background-color: $text-color;
+
+            &:hover {
+                color: $text-color;
+                border-color: $yellow;
+                background-color: $yellow;
+            }
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: map-get($grid-breakpoints, sm) - 1) {
+    .footer {
+        &__left-block {
+            @include flexbox();
+            height: $footer-height-xs;
+        }
+
+        &__center-block {
+            height: $footer-height-xs;
+        }
+    }
+}
