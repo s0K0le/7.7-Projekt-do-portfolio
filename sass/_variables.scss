@@ -1,7 +1,7 @@
 /******************/
 /*      FONTS     */
 /******************/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800');
 $font-header: 'Montserrat', sans-serif;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
@@ -60,6 +60,7 @@ $social-icon-size: 20px;
 $transition-time: .3s;
 
 $gap-section: 120px;
+$padding-horizontal: 20px;
 
 $footer-height: 90px;
 $footer-height-xs: $footer-height - 30px;

@@ -3,7 +3,8 @@
 
     .person {
         @include flexbox(center, center, column);
-        padding: 0 10% 30px;
+        padding-top: 0;
+        padding-bottom: 30px;
 
         .person-link {
             @include flexbox(center, center, column);

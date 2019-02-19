@@ -1,8 +1,8 @@
 $grid-breakpoints: (
-    xs: 0,     // Extra small                  < 576
-    sm: 576px, // Small (landscape phones)     ≥ 576
-    md: 768px, // Medium (tablets)             ≥ 768
-    lg: 992px, // Large (desktops)             ≥ 992
+    xs: 0, // Extra small < 576
+    sm: 576px, // Small (landscape phones) ≥ 576
+    md: 768px, // Medium (tablets) ≥ 768
+    lg: 992px, // Large (desktops) ≥ 992
     xl: 1200px // Extra large (large desktops) ≥ 1200
 );
 
@@ -26,8 +26,8 @@ $grid-breakpoints: (
     @include grid('xs');
 
     .container {
-        max-width: auto;
-        margin: 0 auto
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
@@ -36,7 +36,7 @@ $grid-breakpoints: (
 
     .container {
         max-width: 540px;
-        margin: 0 auto
+        margin: 0 auto;
     }
 }
 
@@ -45,7 +45,7 @@ $grid-breakpoints: (
 
     .container {
         max-width: 720px;
-        margin: 0 auto
+        margin: 0 auto;
     }
 }
 
@@ -54,7 +54,7 @@ $grid-breakpoints: (
 
     .container {
         max-width: 960px;
-        margin: 0 auto
+        margin: 0 auto;
     }
 }
 
@@ -62,7 +62,8 @@ $grid-breakpoints: (
     @include grid('xl');
 
     .container {
+        width: 100%;
         max-width: 1140px;
-        margin: 0 auto
+        margin: 0 auto;
     }
 }

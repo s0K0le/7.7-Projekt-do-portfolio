@@ -1,7 +1,6 @@
 .services {
     .card {
         @include flexbox(center, center, column);
-        padding: 0 3%;
 
         &__icon {
             @include flexbox;

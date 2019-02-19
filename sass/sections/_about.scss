@@ -1,12 +1,11 @@
 .about {
 
     .event {
-        padding: 0 30px;
+        // padding: 0 30px;
 
         &__date {
             @extend %header-style;
             text-transform: uppercase;
-            margin-top: 6px;
         }
 
         &__title {
@@ -51,7 +50,7 @@
         &:before {
             content: '';
             display: block;
-            border-left: 6px solid $line-color;
+            border-left: 2px solid $line-color;
             transform: translateX(50%);
             position: absolute;
             bottom: 0;
@@ -64,7 +63,7 @@
             padding-bottom: 60%;
             display: block;
             margin: 0 auto;
-            width: 95%;
+            width: 100%;
             object-fit: cover;
         }
     }
@@ -74,8 +73,8 @@
             position: relative;
             display: block;
             margin: 0 auto;
-            width: 95%;
-            padding-top: calc(95% - 12px); // 2 x 6px: circle border size
+            width: 100%;
+            padding-top: calc(100% - 12px); // 2 x 6px: circle border size
             border: 6px solid $line-color;
             border-radius: 50%;
             background-color: $yellow;
@@ -100,6 +99,14 @@
     }
 }
 
+@media (max-width: map-get($grid-breakpoints, xl) - 1) {
+    .about {
+        .event-last__circle-text {
+            font-size: 14px;
+        }
+    }
+}
+
 @media (max-width: map-get($grid-breakpoints, lg) - 1) {
     .about {
 
@@ -109,15 +116,21 @@
 
             .event__image {
                 padding-bottom: 50%;
-                width: 80%;
+                width: 100%;
             }
 
             ;
         }
 
-        .event-last__circle {
-            width: 80%;
-            padding-top: calc(80% - 12px);
+        .event-last {
+            &__circle {
+                width: 100%;
+                padding-top: calc(100% - 12px);
+            }
+
+            &__circle-text {
+                font-size: $header-size;
+            }
         }
 
         .event-left {

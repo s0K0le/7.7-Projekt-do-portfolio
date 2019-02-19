@@ -20,6 +20,11 @@
 	@include var-gap-section(60px);
 }
 
+.gaps-hor {
+	padding-left: $padding-horizontal;
+	padding-right: $padding-horizontal;
+}
+
 .btn-big {
 	@extend %header-style;
 	display: inline-block;

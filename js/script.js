@@ -2,8 +2,6 @@
 
 function toggleMenu(hide) {
     document.querySelector('.nav-mobile').classList.toggle('nav-mobile--hide', hide);
-    // document.querySelector('.nav').classList.toggle('sidebar--mini', visible);
-    // document.querySelector('.content-wrapper').classList.toggle('content-wrapper--max', visible);
 }
 
 function animeMenuHamburger(e) {
@@ -32,6 +30,9 @@ function topFunction() {
 }
 
 document.querySelector('.btn-toTop').addEventListener('click', topFunction);
+
+// document.querySelector('.nav-mobile__link').forEach(anchor => {
+//     anchor.addEventListener('click', toggleMenu(hide))});
 
 (function () {
     toggleMenu(true);

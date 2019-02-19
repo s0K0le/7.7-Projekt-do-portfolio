@@ -5,7 +5,7 @@
         @include flexbox(center, center, column);
         background-color: $white;
 
-        width: 80%;
+        // width: 80%;
         margin: 0 auto;
         transition: transform $transition-time;
 

@@ -10,7 +10,8 @@
     }
 
     @if ($top=='0'and $bottom=='0') {
-        padding: $gap 0;
+        padding-top: $gap;
+        padding-bottom: $gap;
     }
 
     @else {
@@ -22,11 +23,13 @@
 @mixin var-gap-section($size: $gap-section) {
     @media (max-width: map-get($grid-breakpoints, md) - 1) {
         $small-gap-section: $size / 2;
-        padding: $small-gap-section 0;
+        padding-top: $small-gap-section;
+        padding-bottom: $small-gap-section;
     }
 
     @media (min-width: map-get($grid-breakpoints, md)) {
-        padding: $size 0;
+        padding-top: $size;
+        padding-bottom: $size;
     }
 }
 
@@ -85,7 +88,6 @@
 
     font-weight: 800;
     text-transform: uppercase;
-    text-shadow: 0px -1px 2px $text-light-color;
     letter-spacing: 2px;
 }
 
