@@ -16,43 +16,58 @@
     <header id="home" class="container-fluid jumbotron">
         <div class="jumbotron__overlay">
             <div class="container jumbotron__gap gaps-hor">
-                <nav class="nav">
-                    <a href="#" class="nav__logo">Golden</a>
+                <div class="navbar">
+                    <a class="site-logo" href="#home">Golden</a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li>
+                                <a class="menu__link" href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a class="menu__link" href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a class="menu__link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li>
+                                <a class="menu__link" href="#about">About</a>
+                            </li>
+                            <li>
+                                <a class="menu__link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
 
-                    <div class="menu-hamburger">
-                        <div class="menu-hamburger__line1"></div>
-                        <div class="menu-hamburger__line2"></div>
-                        <div class="menu-hamburger__line3"></div>
+                <div class="navbar-mobile">
+                    <div class="navbar-mobile__header">
+                        <a class="site-logo" href="#home">Golden</a>
+                        <div class="menu-hamburger">
+                            <div class="menu-hamburger__line1"></div>
+                            <div class="menu-hamburger__line2"></div>
+                            <div class="menu-hamburger__line3"></div>
+                        </div>
                     </div>
-
-                    <ul class="menu">
-                        <li>
-                            <a href="#home" class="menu__link">Home</a>
-                        </li>
-                        <li>
-                            <a href="#services" class="menu__link">Services</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" class="menu__link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#about" class="menu__link">About</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="menu__link">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <nav>
-                    <ul class="nav-mobile">
-                        <li class="nav-mobile__item"><a class="menu__link nav-mobile__link" href="#home">Home</a></li>
-                        <li class="nav-mobile__item"><a class="menu__link nav-mobile__link" href="#services">Services</a></li>
-                        <li class="nav-mobile__item"><a class="menu__link nav-mobile__link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-mobile__item"><a class="menu__link nav-mobile__link" href="#about">About</a></li>
-                        <li class="nav-mobile__item"><a class="menu__link nav-mobile__link" href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+                    <nav class="menu-mobile">
+                        <ul class="menu-mobile__list">
+                            <li class="menu-mobile__item">
+                                <a class="menu__link menu-mobile__link" href="#home">Home</a>
+                            </li>
+                            <li class="menu-mobile__item">
+                                <a class="menu__link menu-mobile__link" href="#services">Services</a>
+                            </li>
+                            <li class="menu-mobile__item">
+                                <a class="menu__link menu-mobile__link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="menu-mobile__item">
+                                <a class="menu__link menu-mobile__link" href="#about">About</a>
+                            </li>
+                            <li class="menu-mobile__item">
+                                <a class="menu__link menu-mobile__link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
 
                 <div class="title">
                     <p class="title__welcome">Welcome To Our Studio!</p>
@@ -300,7 +315,8 @@
                         </div>
                     </div>
                 </div>
-                <p class="team__description gaps-hor">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                <p class="team__description gaps-hor">Proin iaculis purus consequat sem cure digni ssim donec
+                    porttitora entum
                     suscipit aenean
                     rhoncus posuere odio in tincidunt proin iaculis.</p>
             </div>

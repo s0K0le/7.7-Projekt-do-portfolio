@@ -2,17 +2,20 @@
 /*      FONTS     */
 /******************/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800');
-$font-header: 'Montserrat', sans-serif;
+$font-header: 'Montserrat',
+sans-serif;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
-$font-text: 'Roboto Slab', serif;
+$font-text: 'Roboto Slab',
+serif;
 
 @font-face {
     font-family: 'DroidSerif';
     src: url("../fonts/DroidSerif-Italic.ttf") format("truetype"),
 }
 
-$font-text-italic: 'DroidSerif', serif;
+$font-text-italic: 'DroidSerif',
+serif;
 
 @font-face {
     font-family: 'Wisdom';
@@ -35,6 +38,8 @@ $placeholder-color: #bbb;
 $bg-darker-color: #f7f7f7;
 
 $line-color: #f1f1f1;
+$portfolio-bg-color: $bg-darker-color;
+$team-bg-color: #f9f9f9;
 
 
 /******************/
@@ -47,7 +52,7 @@ $header-big-size: 40px;
 $header-size: 18px;
 
 $font-size-base: 14px;
-$font-size-bigger: $font-size-base + 2px;
+$font-size-bigger: $font-size-base+2px;
 
 
 /******************/
@@ -60,7 +65,7 @@ $social-icon-size: 20px;
 $transition-time: .3s;
 
 $gap-section: 120px;
-$padding-horizontal: 20px;
+$padding-vertical: 20px;
 
 $footer-height: 90px;
 $footer-height-xs: $footer-height - 30px;

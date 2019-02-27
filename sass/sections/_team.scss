@@ -1,5 +1,5 @@
 .team {
-    background-color: $bg-darker-color;
+    background-color: $team-bg-color;
 
     .person {
         @include flexbox(center, center, column);
@@ -26,6 +26,8 @@
                 width: 80%;
                 object-fit: cover;
                 opacity: .8;
+                border: 6px solid $white;
+                border-radius: 50%;
                 transition: $transition-time;
             }
 

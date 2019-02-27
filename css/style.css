@@ -912,7 +912,7 @@ figure {
   padding-bottom: 120px;
 }
 
-.nav {
+.navbar {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
@@ -923,7 +923,7 @@ figure {
       align-items: center;
 }
 
-.nav__logo {
+.site-logo {
   display: inline-block;
   font-family: "Wisdom";
   font-size: 26px;
@@ -934,7 +934,7 @@ figure {
   margin-left: -20px;
 }
 
-.menu {
+.menu__list {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
@@ -998,21 +998,58 @@ figure {
   font-weight: 700;
 }
 
-.menu-hamburger {
-  display: none;
-}
-
-.nav-mobile {
+.navbar-mobile {
   display: none;
 }
 
 @media (max-width: 767px) {
-  .menu {
+  .navbar {
+    display: none;
+  }
+  .navbar-mobile {
+    display: block;
+  }
+  .navbar-mobile__header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .navbar-mobile .menu-mobile__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+    -ms-flex-align: center;
+        align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar-mobile .menu-mobile__item {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .navbar-mobile .menu-mobile__link {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .navbar-mobile .menu-mobile--hide {
     display: none;
   }
   .menu-hamburger {
     display: inline-block;
-    margin: 5px 10px;
     padding: 4px 8px;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -1041,33 +1078,6 @@ figure {
   .menu-hamburger.change .menu-hamburger__line3 {
     transform: rotate(45deg) translate(-7px, -7px);
     background-color: #fed136;
-  }
-  .nav-mobile {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column wrap;
-        flex-flow: column wrap;
-    -ms-flex-align: center;
-        align-items: center;
-    list-style-type: none;
-    padding: 0;
-  }
-  .nav-mobile__item {
-    width: 100%;
-  }
-  .nav-mobile__link {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    height: 26px;
-    width: 100%;
-    padding: 30px 0;
-  }
-  .nav-mobile--hide {
-    display: none;
   }
   .jumbotron__gap {
     padding-top: 20px;
@@ -1340,7 +1350,7 @@ figure {
 }
 
 .team {
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
 }
 
 .team .person {
@@ -1383,6 +1393,8 @@ figure {
   -o-object-fit: cover;
      object-fit: cover;
   opacity: .8;
+  border: 6px solid #fff;
+  border-radius: 50%;
   transition: 0.3s;
 }
 

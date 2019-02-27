@@ -1,5 +1,5 @@
 .portfolio {
-    background-color: $bg-darker-color;
+    background-color: $portfolio-bg-color;
 
     .minisite {
         @include flexbox(center, center, column);
